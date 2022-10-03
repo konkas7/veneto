@@ -1,0 +1,11 @@
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.csproj.AssemblyReference.cache
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.csproj.SuggestedBindingRedirects.cache
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.Form1.resources
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.Properties.Resources.resources
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.csproj.GenerateResource.cache
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.csproj.CoreCompileInputs.cache
+C:\Users\vita.19333\source\repos\veneto\veneto\bin\Debug\veneto.exe.config
+C:\Users\vita.19333\source\repos\veneto\veneto\bin\Debug\veneto.exe
+C:\Users\vita.19333\source\repos\veneto\veneto\bin\Debug\veneto.pdb
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.exe
+C:\Users\vita.19333\source\repos\veneto\veneto\obj\Debug\veneto.pdb

@@ -17,16 +17,16 @@ namespace veneto
         public Form1()
         {
             InitializeComponent();
-            textBox1.ReadOnly = textBox2.ReadOnly = textBox3.ReadOnly = textBox4.ReadOnly = textBox5.ReadOnly = textBox6.ReadOnly = textBox7.ReadOnly = textBox8.ReadOnly = textBox9.ReadOnly = textBox10.ReadOnly = textBox11.ReadOnly = textBox12.ReadOnly = textBox13.ReadOnly = true;
+            textBox2.ReadOnly = textBox3.ReadOnly = textBox4.ReadOnly = textBox5.ReadOnly = textBox6.ReadOnly = textBox7.ReadOnly = textBox8.ReadOnly = textBox9.ReadOnly = textBox10.ReadOnly = textBox11.ReadOnly = textBox12.ReadOnly = textBox13.ReadOnly = textBox14.ReadOnly = true;
         }
 
         private void textBox14_TextChanged(object sender, EventArgs e)
         {
-            string testo = textBox14.Text.ToUpper();
+            string testo = textBox16.Text.ToUpper();
 
             if (testo != "")
             {
-                var f = new FileStream(@"veneto_verona.csv", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                var f = new FileStream(@"veneto.csv", FileMode.OpenOrCreate, FileAccess.ReadWrite);
                 BinaryReader reader = new BinaryReader(f);
 
                 f.Seek(0, SeekOrigin.Begin);
@@ -67,7 +67,7 @@ namespace veneto
                     string tempp = Encoding.ASCII.GetString(reader.ReadBytes(numm)); //lo rileggo
                     string[] fields = tempp.Split(';');
 
-                    TextBox[] provaPerOttimizzare = new TextBox[] { textBox1, textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12, textBox13 };
+                    TextBox[] provaPerOttimizzare = new TextBox[] { textBox2, textBox3, textBox4, textBox5, textBox6, textBox7, textBox8, textBox9, textBox10, textBox11, textBox12, textBox13, textBox14 };
                     int[] indiciValidi = new int[] { 0, 1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 };//sono solo gli indici della split con dei campi utili da stampare
 
                     for (int t = 0; t < provaPerOttimizzare.Length; t++)
@@ -76,7 +76,7 @@ namespace veneto
                 f.Close();
             }
             else//sennò cancello
-                textBox1.Text = textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = textBox6.Text = textBox7.Text = textBox8.Text = textBox9.Text = textBox10.Text = textBox11.Text = textBox12.Text = textBox13.Text = null;
+                textBox2.Text = textBox3.Text = textBox4.Text = textBox5.Text = textBox6.Text = textBox7.Text = textBox8.Text = textBox9.Text = textBox10.Text = textBox11.Text = textBox12.Text = textBox13.Text = textBox14.Text = null;
         }
         static int myCompare(string stringa1, string stringa2)
         {
@@ -106,6 +106,11 @@ namespace veneto
         }
 
         private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
         {
 
         }
